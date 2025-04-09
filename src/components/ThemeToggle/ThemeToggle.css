@@ -1,0 +1,11 @@
+.theme-toggle {
+    padding: 0.5rem 1rem;
+    background-color: var(--info);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background-color: var(--info-hover);
+}

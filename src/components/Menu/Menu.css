@@ -1,0 +1,25 @@
+.menu {
+    width: 250px;
+    background-color: var(--background-primary);
+    border-right: 1px solid var(--border-primary);
+    padding: 1rem;
+}
+
+.menu h2 {
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.menu button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: var(--info);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: var(--info-hover);
+}

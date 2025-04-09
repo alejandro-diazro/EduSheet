@@ -1,0 +1,19 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--header-background);
+  border-bottom: 1px solid var(--border-primary);
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+}

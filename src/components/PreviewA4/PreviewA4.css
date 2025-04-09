@@ -1,0 +1,266 @@
+/* src/components/PreviewA4.css */
+.preview-container {
+    flex: 1;
+    display: flex;
+    background-color: var(--background-secondary);
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.a4-sheet {
+    width: 210mm;
+    height: 297mm;
+    background-color: var(--background-primary);
+    padding: 20mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: relative;
+    border-left: 2px solid var(--border-primary);
+    border-right: 2px solid var(--border-primary);
+}
+
+.exercise {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border: 1px solid var(--border-primary);
+    position: relative;
+}
+
+.exercise h3 {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.exercise p {
+    margin: 0;
+    color: var(--text-primary);
+}
+
+.guideline {
+    position: relative;
+}
+
+.guideline-line {
+    position: absolute;
+}
+
+.border-line {
+    height: 2px;
+    background-color: var(--border-primary);
+}
+
+.top-line {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottom-line {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-line {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+}
+
+.right-line {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+}
+
+.center-line {
+    background-color: var(--info);
+    height: 1px;
+    left: 0;
+    right: 0;
+}
+
+.top-center-line,
+.bottom-center-line {
+    position: absolute;
+}
+
+.right-menu {
+    width: 250px;
+    background-color: var(--background-primary);
+    border-left: 1px solid var(--border-primary);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.right-menu h2 {
+    margin-top: 0;
+    color: var(--text-primary);
+}
+
+.menu-item-wrapper {
+    margin-bottom: 0.5rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+}
+
+.item-label {
+    flex: 1;
+    color: var(--text-primary);
+}
+
+.controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.icon:hover {
+    color: var(--info);
+}
+
+.duplicate:hover {
+    color: var(--success);
+}
+
+.edit-box {
+    background-color: var(--background-primary);
+    padding: 0.5rem;
+    border: 1px solid var(--border-primary);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0.5rem;
+}
+
+.edit-textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.5rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    resize: vertical;
+}
+
+.edit-textarea:focus {
+    outline: none;
+    border-color: var(--info);
+}
+
+.edit-options {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.format-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.format-buttons button {
+    padding: 0.3rem 0.6rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.format-buttons button.active {
+    background-color: var(--info);
+    color: #fff;
+}
+
+.format-buttons button:hover {
+    background-color: var(--info-hover);
+    color: #fff;
+}
+
+.font-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.font-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text-primary);
+}
+
+.font-selector {
+    padding: 0.3rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+    max-width: 100px;
+}
+
+.size-input {
+    width: 60px;
+    padding: 0.3rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+}
+
+.size-input:focus {
+    outline: none;
+    border-color: var(--info);
+}
+
+.guideline-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.guideline-options label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: var(--text-primary);
+}
+
+.line-spacing-input {
+    width: 60px;
+    padding: 0.3rem;
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--border-primary);
+    color: var(--text-primary);
+}
+
+.line-spacing-input:focus {
+    outline: none;
+    border-color: var(--info);
+}
+
+.close-button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--danger);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: var(--danger-hover);
+}

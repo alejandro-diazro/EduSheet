@@ -1,0 +1,78 @@
+/* src/styles/global.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Schoolbell&family=Annie+Use+Your+Telescope&family=Coming+Soon&family=Patrick+Hand&family=Architects+Daughter&display=swap');
+@font-face {
+    font-family: 'ColeCarreira';
+    src: url('../assets/ColeCarreira.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Escolar';
+    src: url('../assets/Escolar_G.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Escolar_4';
+    src: url('../assets/Escolar_P.ttf') format('truetype');
+    font-weight: auto;
+    font-style: auto;
+}
+@font-face {
+    font-family: 'Massallera';
+    src: url('../assets/massallera.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trace';
+    src: url('../assets/TRACE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --background-primary: #fff;
+    --background-secondary: #f5f5f5;
+    --background-tertiary: #f9f9f9;
+    --text-primary: #333;
+    --text-secondary: #ddd;
+    --border-primary: #ddd;
+    --border-secondary: #555;
+    --header-background: #f2f2f2;
+    --button-disabled: #cccccc;
+    --link-color: #2196f3;
+    --success: #4caf50;
+    --success-hover: #45a049;
+    --danger: #f44336;
+    --danger-hover: #d32f2f;
+    --warning: #ff9800;
+    --warning-hover: #e68900;
+    --info: #2196f3;
+    --info-hover: #1976d2;
+}
+
+body.light {
+    --background-primary: #fff;
+    --background-secondary: #f5f5f5;
+    --background-tertiary: #f9f9f9;
+    --text-primary: #333;
+    --border-primary: #ddd;
+    --header-background: #f2f2f2;
+}
+
+body.dark {
+    --background-primary: #2a2a2a;
+    --background-secondary: #1a1a1a;
+    --background-tertiary: #3a3a3a;
+    --text-primary: #ddd;
+    --border-primary: #555;
+    --header-background: #444;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+}
